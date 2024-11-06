@@ -12,10 +12,12 @@ function generateEmails() {
           .join("");
 
         if (emailList.length === 10) {
-          console.log("Tutte le email generate:", emailList);
+          console.log("Elenco delle email generate:", emailList);
         }
       });
   }
 }
 
-generateEmails();
+document
+  .getElementById("generate-button")
+  .addEventListener("click", generateEmails);
