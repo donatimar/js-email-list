@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--  TITLE -->
     <title>Generatore di email</title>
 
     <!-- FAVICON -->
@@ -30,10 +29,22 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
-    <h1>Lista delle e-mail generate</h1>
-    <button id="generate-button">Genera Email</button>
-    <ul id="email-list"></ul>
+  <body class="bg-light">
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div
+        class="card shadow p-5"
+        style="max-width: 500px; background-color: #f8f9fa"
+      >
+        <h1 class="text-center mb-5 fs-1">Lista delle email generate</h1>
+        <button id="generate-button" class="btn btn-primary w-100 mb-5 fs-5">
+          Crea lista email
+        </button>
+        <ul id="email-list" class="list-group"></ul>
+      </div>
+    </div>
+
     <!-- SCRIPT JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

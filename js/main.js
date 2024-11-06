@@ -8,7 +8,12 @@ function generateEmails() {
         emailList.push(data.response);
 
         emailListEl.innerHTML = emailList
-          .map((email) => `<li>${email}</li>`)
+          .map((email) => {
+            return `
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-warning fs-5">
+                  <span>${email}</span>
+                </li>`;
+          })
           .join("");
 
         if (emailList.length === 10) {
